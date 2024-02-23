@@ -1,6 +1,6 @@
 import os
 
-with open("spider.txt", "w") as file:
+with open("./spider.txt", "w") as file:
     file.write("Spider has eight legs.\n")
 file.close()
 
