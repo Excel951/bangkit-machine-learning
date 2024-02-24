@@ -13,6 +13,7 @@ import subprocess
 # print(result.stdout.decode().split())
 
 result = subprocess.run(['rm', 'does_not_exist'], capture_output=True)
-print(result.returncode)
-print(result.stdout)
-print(result.stderr)
+print(type(result.returncode))
+print(type(result.stdout))
+print(type(result.stderr))
+print(result)
