@@ -18,7 +18,7 @@ print(transform_record("Charlie Rivera,698-746-3357,Web Developer"))
 
 # quiz 2
 def multi_vowel_words(text):
-  pattern = ___
+  pattern = r"\b\w*[aieuo]{3,}\w*\b"
   result = re.findall(pattern, text)
   return result
 
@@ -39,7 +39,7 @@ print(multi_vowel_words("Hello world!"))
 
 # quiz 3
 def transform_comments(line_of_code):
-  result = re.sub(r"")
+  result = re.sub(r"#+", r"//", line_of_code)
   return result
 
 print(transform_comments("### Start of program")) 
