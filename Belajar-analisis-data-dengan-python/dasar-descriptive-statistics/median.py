@@ -1,3 +1,5 @@
+# median is method that tolerant to outlier
+
 import numpy as np
 from jumlah_kucing import jumlah_kucing
 
