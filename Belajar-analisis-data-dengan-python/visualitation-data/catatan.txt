@@ -1,0 +1,12 @@
+univariate visualization
+  => terbagi menjadi 3 kategori:
+    a. Univariate visualization
+       merupakan visualisasi data yang mempresentasikan informasi yang terdapat pada satu variabel.
+       Memberikan gambaran terkait distribusi sebuah variabel dalam suatu dataset.
+    b. Bivariate visualization
+       merupakan informasi yang mempresentasikan informasi yang terdapat dalam dua variabel.
+       visualisasi ini digunakan untuk menganalisis hubungan antar dua variabel dalam dataset.
+    c. Multivariate visualization
+       Jenis yang menggambarkan informasi dengan menggunakan lebih dari dua variabel. Jenis ini 
+       digunakan untuk mempresentasikan hubungan dan pola yang terdapat dalam multidimensional data.
+       
