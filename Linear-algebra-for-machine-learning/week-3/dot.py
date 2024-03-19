@@ -9,7 +9,9 @@ M2 = np.array([
     [0,1]
 ])
 
+# both code below have same meaning
 print(np.dot(M1, M2))
+print(M1 @ M2)
 
 A = np.array([
     [1,1],
