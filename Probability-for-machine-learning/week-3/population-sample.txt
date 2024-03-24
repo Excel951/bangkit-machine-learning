@@ -1,0 +1,21 @@
+Population Variance Formula
+Var(X) = omega ^ 2 = 1/N * sum of (x - mean) ^ 2
+mean = mean of population
+N = size of population
+
+Sample Variance Formula
+s^2 = sum of (x - mean (symbol = x have - over head)) ^ 2 / n - 1
+
+Central Limit Theorem (Discrete Random Variable)
+u = n*p
+
+omega ^ 2 = n*p * (1 - p)
+
+Central Limit Theorem (Continuous Random Variable)
+mean = 1/n * sum of (E[x]) = 1/n * n * E[x]
+
+Variance
+var = Var(1/n * sum of (Xi)) 
+        = 1/(n ^ 2) * sum of (Var(Xi))
+            = 1/(n ^ 2) * n * Var(X)
+                = Var(X)/n

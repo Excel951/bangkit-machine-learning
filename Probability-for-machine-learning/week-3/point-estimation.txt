@@ -1,0 +1,5 @@
+Maximum Likelihood: Bernoulli Example
+d/dp * l (p;x) = d/dp * ((sum of Xi) * log(p) + (n - sum of Xi) * log(1 - p))
+                    = (sum of Xi)/p + (n - sum of Xi)/(1 - p) * (-1) = 0
+                        p head ^ = sum of Xi/n = mean
+
