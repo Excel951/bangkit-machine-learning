@@ -1,0 +1,27 @@
+standard deviation of the sample means
+omega x (mean) = omega / √n
+
+margin of error
+(X-u)/omega = Z ~ N(u, omega)
+
+standard error
+omega x = omega / √n
+
+margin of error for 95% confidence intervals
+1.96 * omega / √n
+
+margin of error in general
+z1 - alpha/2 * omega / √n
+omega = deviasi standar populasi
+
+confidence intervals
+goal: lower limit < u < upper limit
+x - 1.96 * omega / √n < u < x + 1.96 * omega / √n
+
+calculate sample for margin of error
+margin of error = 1.96 * omega / √n
+n^2 * margin of error = 1.96 * omega
+n^2 = 1.96 * omega / margin of error
+n ^ 2 = 1.96 * 25 / 7
+n = (1.96 * 25 / 7)^2
+n = 267
