@@ -1,0 +1,25 @@
+kapan feature (x) scaling diperlukan?
+feature scaling atau x rescaling diperlukan ketika range dari suatu input (x) terlalu besar atau pun kecil.
+seperti contoh:
+    -1 <= x <= 1        tidak perlu rescale
+    -3 <= x <= 3        tidak perlu rescale
+    -0.3 <= x <= 0.3    tidak perlu rescale
+    0 <= x <= 3         tidak perlu rescale
+
+    -100 <= x <= 100    perlu rescale
+    -0.001 <= x <= 0.001 perlu rescale
+    
+
+normalization method
+    1. feature scaling
+    2. mean normalization
+    3. Z-score normalization
+
+feature scaling
+x = x / max
+
+mean normalization
+x = x - mu (mean) / max - min
+
+Z-score normalization formula:
+x = x - mean / standard deviation

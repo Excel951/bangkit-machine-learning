@@ -19,3 +19,17 @@ J(w) = 1/2m * sum of (wx - y)^2
 ketika b = 0
 
 J(w) untuk menghitung total error dari model
+
+================================================================
+
+gradient descent algorithm
+perlu diingat bahwa untuk menetapkan model kita menggunakan weight (w) dan bias (b)
+untuk mengetahui error dari model pun, kita perlu w dan b
+sehingga untuk menghitung langkah kemana kita akan pergi dalam menemukan min J, kita juga menghitung w dan b
+formula di bawah akan terus diulang hingga ditemukan J(w) yang paling kecil atau mendekati 0
+
+w = w - alpha * derivative / turunan dari J(w, b) => w - alpha * 1/m * sum of (f w,b(xi) - yi) * xi
+
+b = b - alpha * derivative / turunan dari J(w, b) => b - alpha * 1/m * sum of (f w,b(xi) - yi)
+
+alpha => learning rate => langkah dari pembelajaran algorithm
