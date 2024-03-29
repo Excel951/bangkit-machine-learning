@@ -1,0 +1,7 @@
+cost function => untuk mengetahui seberapa jauh error antara y prediksi dan real
+                 dalam fungsi untuk menentukan garis ( f(x) = wx + b )
+cost func => 1/m * sum of (y hat - y)^2 or 1/2m * sum of (y hat - y)^2
+y hat => hasil prediksi
+y = real
+
+diff cost func pertama dan kedua => kedua lebih sering dipakai di ml terutama supaya perhitungan lebih rapi
