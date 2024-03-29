@@ -5,3 +5,17 @@ y hat => hasil prediksi
 y = real
 
 diff cost func pertama dan kedua => kedua lebih sering dipakai di ml terutama supaya perhitungan lebih rapi
+
+model => fx = wx + b
+parameters => w, b
+cost function => 1/2m * sum of (y hat - y)^2
+goal => minimize J(w, b)
+
+J(w) = 1/2m * sum of (fw(x) - y)^2
+
+J(w) = 1/2m * sum of (wx - y)^2
+    ^
+    |
+ketika b = 0
+
+J(w) untuk menghitung total error dari model
