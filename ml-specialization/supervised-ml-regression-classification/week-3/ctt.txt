@@ -1,0 +1,20 @@
+dalam logistic regression, cost biasa tidak mampu untuk mendeteksi 
+minimum global (hanya sebatas lokal minimum)
+oleh karena itu, digunakan beberapa formula di bawah ini
+
+squared error cost
+J(w,b) = (1/m) * sum of (1/2 * (fw,b(xi) - yi)^2)
+
+loss = L(fw,b(xi) - yi)
+
+logistic loss function
+       |--> -log(fw,b(xi))      if yi = 1
+loss = |
+       |--> -log(1 - fw,b(xi))  if yi = 0
+
+simplified cost function for logistic regression
+loss = -yi * log(fw,b(xi)) - (1 - yi) * log(1 - fw,b(xi))
+cost = -(1/m) * sum of (yi * log(fw,b(xi)) + (1 - yi) * log(1 - fw,b(xi)))
+
+dalam logistic regression f_w_b berupa
+f_w_b = 1/(1 + exponen^-(w * x + b))
