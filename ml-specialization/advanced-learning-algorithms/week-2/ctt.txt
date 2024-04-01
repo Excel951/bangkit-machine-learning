@@ -1,0 +1,116 @@
+melanjutkan ctt dari week 1
+baca dulu ctt dari week 1
+
+penggunaan import untuk tensorflow
+
+import tensorflow as tf
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense
+
+step 1
+model = Sequential([
+    Dense(units=25, activation='sigmoid'),
+    Dense(units=15, activation='sigmoid')
+    Dense(units=1, activation='sigmoid')
+])
+
+from tensorflow.keras.losses import BinaryCrossentropy
+
+step 2
+model.compile(loss=BinaryCrossentropy())
+BinaryCrossentropy() digunakan ketika mengerjakan sebuah task dimana menghasilkan 2 hasil saja
+seperti klasifikasi yang menghasilkan 1 dan 0.
+terdapat fungsi lain selain BinaryCrossentropy(), seperti
+Meansquarederror()
+jika mengerjakan task yang menghasilkan banyak output (lebih dari satu atau multiclass classification)
+gunakan SparseCategoricalCrossentropy(). selain itu, masih dalam kasus yang sama, 
+untuk hasil yang lebih akurat tambahkan parameter seperti ini:
+SparseCategoricalCrossentropy(from_logits=True)
+
+step 3
+model.fit(x, y, epochs=100)
+epochs disini merupakan jumlah dari step di gradient descent
+
+bagaimana cara memilih activation function atau g(z) untuk OUTPUT LAYER
+(panduan ini harus disesuaikan dengan fitur atau x yang ada)
+jika mengerjakan binary klasifikasi
+(ketika hasil yang diinginkan hanya 1 dan 0. Contoh deteksi kucing dalam gambar)
+maka gunakan
+sigmoid
+
+jika mengerjakan regression 
+(ketika hasil yang diinginkan bisa minus ataupun plus. Contoh deteksi apakah saham naik atau turun.)
+maka gunakan
+linear activation function
+
+jika mengerjakan regression
+(ketika hasil yang diinginkan hanya bisa 0 ke atas.)
+maka gunakan
+ReLU
+
+jika mengerjakan task yang menghasilkan banyak output (lebih dari satu atau multiclass classification)
+maka gunakan
+softmax
+
+bagaimana cara memilih activation function atau g(z) untuk HIDDEN LAYER
+fungsi yang paling banyak dipakai saat ini adalah
+ReLU
+dan sigmoid adalah fungsi yang saat ini paling sedikit dipakai
+
+
+urutan untuk implementasi SOFTMAX multiclass classification (more numerically accurate)
+model
+model = Sequential([
+    Dense(units=25, activation='relu'),
+    Dense(units=15, activation='relu')
+    Dense(units=10, activation='linear')
+])
+
+loss
+from tensorflow.keras.losses import SparseCategoricalCrossentropy
+model.compile(..., loss=SparseCategoricalCrossentropy(from_logits=True))
+
+fit
+model.fit(x, y, epochs=100)
+
+predict
+logits = model(x)
+f_x = tf.nn.softmax(logits)
+
+
+urutan untuk implementasi logistic regression (more numerically accurate)
+model
+model = Sequential([
+    Dense(units=25, activation='sigmoid'),
+    Dense(units=15, activation='sigmoid')
+    Dense(units=1, activation='linear')
+])
+
+loss
+from tensorflow.keras.losses import BinaryCrossentropy
+model.compile(..., BinaryCrossentropy(from_logits=True))
+model.fit(x, y, epochs=100)
+
+fit
+logit = model(x)
+
+predict
+f_x = tf.nn.sigmoid(logit)
+
+
+implementasi untuk optimasi yang lebih advanced
+model
+model = Sequential([
+    Dense(units=25, activation='sigmoid'),
+    Dense(units=15, activation='sigmoid')
+    Dense(units=1, activation='linear')
+])
+
+compile
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3), 
+    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+)
+
+fit
+model.fit(x, y, epochs=100)
