@@ -13,3 +13,22 @@ hasil yang tertinggi adalah hasil yang digunakan
 
 formula: H(p1_root) - (w_left * H(p1_left) + w_right * H(p1_right))
 w_left or w_right = jumlah yang ada di node / jumlah yang ada di keseluruhan node (kiri dan kanan)
+
+XGBoost (eXtreme Gradient Boost)
+digunakan pada random forest algorithm
+bertujuan untuk memaksimalkan hasil yang didapatkan
+
+contoh cara penggunaan dalam python:
+Classification
+from xgboost import XGBClassifier
+
+model = XGBClassifier()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+Regression
+from xgboost import XGBRegressor
+
+model = XGBRegressor()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
