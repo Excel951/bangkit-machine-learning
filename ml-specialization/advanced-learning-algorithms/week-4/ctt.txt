@@ -1,0 +1,15 @@
+cara menghitung impurity dalam decision tree
+
+p0 = 1 - p1
+
+H(p1) = -p1 * log2(p1) - p0 * log2(p0)
+      = -p1 * log2(p1) - (1 - p1) * log2(1 - p1)
+
+note: 0 log 0 = 0
+
+untuk memilih split dalam decision tree
+jumlahkan impurity dari kedua node atau bagian
+hasil yang tertinggi adalah hasil yang digunakan
+
+formula: H(p1_root) - (w_left * H(p1_left) + w_right * H(p1_right))
+w_left or w_right = jumlah yang ada di node / jumlah yang ada di keseluruhan node (kiri dan kanan)
