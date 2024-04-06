@@ -1,0 +1,9 @@
+debugging a learning algorithm
+jika ada error yang cukup besar dalam prediksi yang tidak dapat diterima maka lakukan
+
+get more training examples              fix high variance
+try smaller sets of features            fix high variance
+try getting additional features         fix high bias
+try adding polynomial features          fix high bias
+try decreasing lambda                   fix high bias
+try increasing lambda                   fix high variance
