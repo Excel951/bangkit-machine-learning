@@ -1,0 +1,5 @@
+# Ignore GloVe word embedding file
+DeeplearningAI-Tensorflow-Dev/C3-Natural-Language-Processing-in-Tensorflow/week-3/C3W3_Assignment/data/glove.6B.100d.txt
+
+# Ignore training dataset file
+DeeplearningAI-Tensorflow-Dev/C3-Natural-Language-Processing-in-Tensorflow/week-3/C3W3_Assignment/data/training_cleaned.csv
