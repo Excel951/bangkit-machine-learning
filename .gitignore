@@ -3,3 +3,7 @@ DeeplearningAI-Tensorflow-Dev/C3-Natural-Language-Processing-in-Tensorflow/week-
 
 # Ignore training dataset file
 DeeplearningAI-Tensorflow-Dev/C3-Natural-Language-Processing-in-Tensorflow/week-3/C3W3_Assignment/data/training_cleaned.csv
+
+# Ignore training dataset file from ILT 5
+ILT-ML-05-AD/content/
+ILT-ML-05-AD/content/Dogs-&-Cats-Images.zip
