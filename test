@@ -1,0 +1,19 @@
+graph TB
+    subgraph SUPPORT ACTIVITIES
+        A1(Pengelolaan Manajemen Sumber Daya) -->|Rekrut Pegawai| A2
+        A1 -->|Pelatihan Pegawai| A2
+        A2(Pengelolaan Teknologi dan Infrastruktur) -->|Pengadaan Sistem| A3
+        A3(Pengelolaan Pengadaan dan Pemeliharaan)
+        A4(Pengelolaan Proses Rekap Administrasi dan Keuangan)
+    end
+
+    subgraph PRIMARY ACTIVITIES
+        B1(Logistik Ke dalam) -->|Pengelolaan penerimaan bahan & barang dari supplier| B2
+        B2(Inventory and Production) -->|Proses produksi bahan & barang jadi| B3
+        B2 -->|Proses quality control| B3
+        B2 -->|Proses pengemasan| B3
+        B3(Logistik Ke luar) -->|Proses pengiriman barang kepada distributor| B4
+        B4(Pemasaran & Penjualan) -->|Proses pembuatan promosi barang| B5
+        B4 -->|Proses pengelolaan data pemasaran dan penjualan| B5
+        B5(Pelayanan Keluhan) -->|Layanan mengenai keluhan para pelanggan berupa Ticketing| B6
+    end
